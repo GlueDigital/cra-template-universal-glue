@@ -1,0 +1,20 @@
+/* Styles to reset default browser styles */
+@layer reset;
+
+/* Base styles for HTML elements */
+@layer base;
+
+/* CSS variables and styles related to the visual theme */
+@layer theme;
+
+/* Styles for the page structure and layout */
+@layer layout;
+
+/* Reusable utility styles */
+@layer utilities;
+
+/* Routes-specific styles */
+@layer routes;
+
+/* Component-specific styles */
+@layer components;

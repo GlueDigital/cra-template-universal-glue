@@ -1,0 +1,13 @@
+@layer components {
+  #colophon {
+    padding: 20px 0;
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 1em;
+    }
+    img {
+      height: 24px;
+    }
+  }
+}

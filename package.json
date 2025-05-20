@@ -1,0 +1,21 @@
+{
+  "name": "cra-template-universal-glue",
+  "version": "2.2.3",
+  "keywords": [
+    "react",
+    "template",
+    "universal",
+    "typescript"
+  ],
+  "description": "An advanced TypeScript template optimized for universal-scripts, featuring an improved structure and modern CSS layout.",
+  "repository": "GlueDigital/cra-template-universal-ts",
+  "author": "Glue Digital <hola@glue.digital>",
+  "license": "MIT",
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "scripts": {
+    "test": "scripts/run-tests.sh"
+  }
+}

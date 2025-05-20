@@ -1,0 +1,19 @@
+@layer routes {
+  #home {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+    color: white;
+    .container {
+      text-align: center;
+    }
+    .icon {
+      color: var(--secondary-color);
+    }
+    @media screen and (min-width: 1025px) {
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+}

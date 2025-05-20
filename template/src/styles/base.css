@@ -1,0 +1,78 @@
+/* Basic styles for HTML elements & normalizations */
+/* This file contains styles that set the foundation for the entire application. */
+/* It helps ensure consistency across different browsers and provides default styles. */
+
+@layer base {
+  html {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color-scheme: light dark;
+  }
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  embed,
+  iframe,
+  object {
+    max-width: 100%;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: initial;
+  }
+
+  a {
+    text-decoration: none;
+    transition: color 0.1s linear;
+    cursor: pointer;
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  hr {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+  }
+
+  img,
+  picture {
+    margin: 0;
+    max-width: 100%;
+  }
+  label {
+    margin-bottom: 0;
+  }
+}

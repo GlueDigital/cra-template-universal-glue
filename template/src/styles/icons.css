@@ -1,0 +1,15 @@
+/* Custom icon font definitions and styles. */
+/* This file defines a custom icon font using @font-face and provides styles for displaying icons. */
+/* It includes font file declarations and CSS rules for icon classes. */
+/* Each icon is represented by a specific class and content value. */
+
+/* Importing the social font stylesheet for icon definitions */
+@import 'socialFont';
+
+/* @font-face {
+  font-family: 'icons';
+  src:  url('/fonts/icons.woff?veyxto') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+} */

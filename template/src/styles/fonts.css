@@ -1,0 +1,13 @@
+/* Font definitions, including Google Fonts and locally hosted fonts. */
+/* This file imports external fonts and defines custom font faces for use throughout the application. */
+/* It ensures that all required fonts are loaded and available for styling. */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* @font-face {
+  font-family: 'Font-name';
+  src: url('../static/fonts/Font-name-Bold.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+} */

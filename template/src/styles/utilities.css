@@ -1,0 +1,76 @@
+/* Reusable utility classes and styles. */
+/* This file contains a collection of utility classes that can be applied to elements for common styling patterns. */
+/* These utilities are designed to be reusable across the application */
+
+@layer utilities {
+  @property --line-clamp {
+    syntax: '<integer>';
+    inherits: false;
+    initial-value: 4;
+  }
+  .ellipsis {
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: var(--line-clamp, 4);
+    line-clamp: var(--line-clamp, 4);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .aspect-ratio-16x9 {
+    position: relative;
+    padding-bottom: 56.25%; /* 9 / 16 * 100 */
+    height: 0;
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .scrollbar-thin {
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+      cursor: pointer;
+      padding: 1px;
+    }
+
+    &::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-track {
+      background: rgba(gray, 0.5);
+    }
+
+    &::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb {
+      background: gray;
+      cursor: pointer;
+    }
+  }
+  .scrollbar-hidden {
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+  }
+}

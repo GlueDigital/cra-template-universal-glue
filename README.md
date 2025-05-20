@@ -1,2 +1,3 @@
-# cra-template-universal-glue
-An advanced TypeScript template optimized for universal-scripts, featuring an improved structure and modern CSS layout.
+# cra-template-universal
+
+Template designed to use with [universal-scripts](https://github.com/GlueDigital/universal-scripts).

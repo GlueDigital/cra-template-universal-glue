@@ -1,0 +1,55 @@
+/* Theme-related styles, variables, and animations. */
+/* This file defines the visual theme of the application, including color palettes, typography, breakpoints, and animations. */
+/* It centralizes theme-specific styles for consistent application-wide appearance. */
+/* It also imports font definitions from fonts.css. */
+
+@layer theme {
+  @import 'fonts.css';
+  :root {
+    /* Background color of the page */
+    --background-color: #16288a;
+    /* Primary color for interactive elements */
+    --primary-color: #324eef;
+    /* Secondary color for accents */
+    --secondary-color: #81d1ff;
+    /* Border color for inputs, textarea, select */
+    --form-border-color: #eeeeee00;
+    /* Base font size */
+    --font-size: 16px;
+    /* Base font color */
+    --base-font-color: #0b215d;
+    /* Base font family */
+    --base-font-family:
+      'Open Sans', 'Arial', 'Helvetica', 'Ubuntu', 'Open Sans', 'Segoe UI',
+      'Roboto', serif;
+    /* Mobile breakpoint */
+    --breakpoint-mobile: 480px;
+    /* Tablet breakpoint */
+    --breakpoint-tablet: 768px;
+    /* Laptop breakpoint */
+    --breakpoint-laptop: 1024px;
+    /* Desktop breakpoint */
+    --breakpoint-desktop: 1440px;
+    /* Smart TV breakpoint */
+    --breakpoint-smartTv: 1920px;
+    /* custom variables */
+    /* ... */
+  }
+
+  @keyframes fadeEnter {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes translateEnter {
+    0% {
+      margin-top: -5vh;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+}
