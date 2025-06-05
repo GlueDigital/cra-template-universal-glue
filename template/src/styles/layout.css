@@ -27,7 +27,6 @@
       scroll-behavior: smooth;
       overflow: auto;
       height: 100vh;
-      background-color: var(--background-color);
       @supports (height: 100dvh) {
         height: 100dvh;
       }
