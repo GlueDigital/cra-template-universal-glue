@@ -72,7 +72,14 @@
     margin: 0;
     max-width: 100%;
   }
+
   label {
     margin-bottom: 0;
+  }
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 1em;
   }
 }
